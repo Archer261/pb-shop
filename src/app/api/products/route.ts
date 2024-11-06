@@ -1,11 +1,9 @@
 import { NextResponse } from 'next/server'
 import clientPromise from '@/lib/mongodb'
-// import { Product } from '@/types/product'
 
 export async function GET() {
     try {
         const client = await clientPromise
-        // const db = client.db("pickleballstore")
         const db = client.db("Clusters")
 
         const products = await db
