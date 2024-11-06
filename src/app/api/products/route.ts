@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server'
 import clientPromise from '@/lib/mongodb'
-import { Product } from '@/types/product'
+// import { Product } from '@/types/product'
 
 export async function GET() {
     try {

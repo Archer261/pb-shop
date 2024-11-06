@@ -1,4 +1,5 @@
 import { STORE_NAME } from '@/lib/constants';
+import Link from 'next/link';
 
 export default function Footer() {
     return (
@@ -9,19 +10,19 @@ export default function Footer() {
                         <h3 className="text-sm font-semibold text-gray-900">Shop</h3>
                         <ul className="mt-4 space-y-2">
                             <li>
-                                <a href="/products/paddles" className="text-gray-600 hover:text-gray-900">
+                                <Link href="/products/paddles" className="text-gray-600 hover:text-gray-900">
                                     Paddles
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/products/balls" className="text-gray-600 hover:text-gray-900">
+                                <Link href="/products/balls" className="text-gray-600 hover:text-gray-900">
                                     Balls
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/products/accessories" className="text-gray-600 hover:text-gray-900">
+                                <Link href="/products/accessories" className="text-gray-600 hover:text-gray-900">
                                     Accessories
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
@@ -29,14 +30,14 @@ export default function Footer() {
                         <h3 className="text-sm font-semibold text-gray-900">Company</h3>
                         <ul className="mt-4 space-y-2">
                             <li>
-                                <a href="/about" className="text-gray-600 hover:text-gray-900">
+                                <Link href="/about" className="text-gray-600 hover:text-gray-900">
                                     About
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/contact" className="text-gray-600 hover:text-gray-900">
+                                <Link href="/contact" className="text-gray-600 hover:text-gray-900">
                                     Contact
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

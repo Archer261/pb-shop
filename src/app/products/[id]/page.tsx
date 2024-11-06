@@ -1,5 +1,6 @@
 // src/app/products/[id]/page.tsx
 import { Product } from '@/types/product'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 
 async function getProduct(id: string): Promise<Product> {
@@ -25,9 +26,11 @@ export default async function ProductDetailPage({
         <div className="container mx-auto px-4 py-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                    <img
+                    <Image
                         src={product.image}
                         alt={product.name}
+                        width={40}
+                        height={40}
                         className="w-full rounded-lg shadow-md"
                     />
                 </div>
